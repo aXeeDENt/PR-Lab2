@@ -1,0 +1,13 @@
+services:
+  http-server:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./content:/app/content
+    networks:
+      - http-network
+
+networks:
+  http-network:
+    driver: bridge
