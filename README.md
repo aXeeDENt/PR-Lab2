@@ -429,33 +429,4 @@ Time    Requests from IP 127.0.0.1    Status
 0.6s    Request 7                     DENIED (7/5)
 1.1s    Request 8                     Allowed (4/5) ← Old requests expired
 ```
-## Conclusion
 
-### Key Achievements
-
-| Metric | Single-threaded | Multi-threaded | Improvement |
-|--------|-----------------|----------------|-------------|
-| **Time (10 requests)** | ~10 seconds | ~3 seconds | **3.3x faster** |
-| **Throughput** | ~1 req/s | ~3.3 req/s | **230% increase** |
-| **Concurrency** | Sequential | 4 parallel threads | **4x parallelism** |
-
-| Feature | Without Locks | With Locks | Fix |
-|---------|---------------|------------|-----|
-| **Counter Accuracy** | 82/100 (82%) | 100/100 (100%) | **18% data loss prevented** |
-| **Lost Updates** | 18 requests | 0 requests | **Thread-safe** |
-| **Race Condition** | Present | Fixed | **Synchronized** |
-
-| Metric | Without Limit | With Limit (5 req/s) | Protection |
-|--------|---------------|----------------------|------------|
-| **Request Rate** | Unlimited | 5 req/s per IP | **Protected** |
-| **Denied (10 req/s spam)** | 0% | 50% | **Fair distribution** |
-| **IP Tracking** | None | Per-IP windows | **DoS prevention** |
-
-### Technical Skills Demonstrated:
-
-1. **Concurrent Programming:** 
-2. **Thread Synchronization:**
-3. **Socket Programming:** 
-4. **Performance Analysis:** 
-5. **Rate Limiting:** 
-6. **Testing:** 
