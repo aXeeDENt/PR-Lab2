@@ -1,0 +1,14 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY file_server_lab2.py .
+
+COPY content/ /app/content/
+
+EXPOSE 8080
+
+ENV NUM_THREADS=4
+ENV WORK_DELAY=1
+
+CMD python file_server_lab2.py content/ --threads ${NUM_THREADS} --delay ${WORK_DELAY}

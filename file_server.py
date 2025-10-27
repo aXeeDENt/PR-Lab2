@@ -1,7 +1,10 @@
+#!/usr/bin/env python3
+
 import socket
 import sys
 import os
 import urllib.parse
+import time
 from pathlib import Path
 from datetime import datetime
 
@@ -67,6 +70,8 @@ def handle_request(client_socket, serve_directory):
         if method != 'GET':
             send_error_response(client_socket, 405, "Method Not Allowed")
             return
+        
+        time.sleep(1)
         
         serve_file(client_socket, path, serve_directory)
         
