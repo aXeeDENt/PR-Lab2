@@ -51,8 +51,8 @@ python3 benchmark_lab2.py comparison
 
 **SCREENSHOT 1.1 - Single-threaded Performance**
 
-![Screenshot 1.1](source/image1.png) - Terminal showing benchmark output
-![Screenshot 1.1](source/image2.png) - Terminal showing benchmark output 2
+![Screenshot 1.1](source/image-1.png) - Terminal showing benchmark output
+![Screenshot 1.1](source/image-2.png) - Terminal showing benchmark output 2
 
 Capture the benchmark output showing:
 - Test description: "Testing single-threaded server (Lab 1)..."
@@ -106,8 +106,8 @@ python3 benchmark_lab2.py comparison
 
 **SCREENSHOT 1.2 - Multi-threaded Performance**
 
-![Screenshot 1.2](source/image3.png)
-![Screenshot 1.2](source/image4.png)
+![Screenshot 1.2](source/image-3.png)
+![Screenshot 1.2](source/image-4.png)
 
 Capture the benchmark output showing:
 - Test description: "Testing multi-threaded server (Lab 2)..."
@@ -168,7 +168,7 @@ python3 test_race.py
 
 **SCREENSHOT 2.1 - Race Condition Detected**
 
-![Screenshot 2.1](source/image5.png)
+![Screenshot 2.1](source/image-5.png)
 
 Capture the test output showing:
 - Server configuration: "WITHOUT locks: --no-locks --threads 50"
@@ -247,7 +247,7 @@ python3 test_race.py
 
 **SCREENSHOT 2.3 - Race Condition Fixed**
 
-![Screenshot 2.3](source/image6.png)
+![Screenshot 2.3](source/image-6.png)
 
 Capture the test output showing:
 - Server configuration: "WITH locks (default): --threads 50"
@@ -312,7 +312,7 @@ python3 benchmark_lab2.py rate-limit
 
 **SCREENSHOT 3.1 - Rate Limiting Statistics**
 
-![Screenshot 3.1](source/image7.png)
+![Screenshot 3.1](source/image-7.png)
 
 Capture the complete test output showing:
 - **Configuration:** 5 requests/second limit per IP
@@ -368,7 +368,7 @@ While the rate limit test is running, observe the server logs in Terminal 1.
 
 **SCREENSHOT 3.2 - IP-Based Rate Limiting**
 
-![Screenshot 3.2](source/image8.png)
+![Screenshot 3.2](source/image-8.png)
 
 Capture server logs showing:
 - IP address being tracked (e.g., 127.0.0.1)
